@@ -1,4 +1,4 @@
-# TPL Code Sample
+# TPL Code Sample (Backend)
 
 #### Be sure you have these versions of Node and NPM or the application won't work:
 
@@ -13,7 +13,7 @@ NPM: ^6.0.0
 git clone https://github.com/Vetrano89/tpl-code-sample-BE.git
 cd tpl-code-sample-BE
 yarn install
-yarn develop
+strapi develop
 ```
 
 Ensure the app is running on http://localhost:1337/ otherwise it won't work with the Front End project (localhost:1337 is hard coded)
