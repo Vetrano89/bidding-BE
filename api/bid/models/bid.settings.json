@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bid",
+  "info": {
+    "name": "Bid",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "SUBMITTED",
+        "ACCEPTED",
+        "REJECTED"
+      ]
+    },
+    "party": {
+      "model": "party"
+    },
+    "deal": {
+      "model": "deal"
+    },
+    "value": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deals",
+  "info": {
+    "name": "Deal",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "valuePercentage": {
+      "type": "decimal"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "startingBid": {
+      "type": "decimal",
+      "required": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PENDING_APPROVAL",
+        "SCHEDULED",
+        "ACTIVE",
+        "COMPLETE",
+        "CANCELLED"
+      ]
+    },
+    "party": {
+      "model": "party"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bids": {
+      "collection": "bid"
+    }
+  }
+}

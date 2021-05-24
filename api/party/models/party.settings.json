@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parties",
+  "info": {
+    "name": "Party",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "businessName": {
+      "type": "string"
+    },
+    "bids": {
+      "collection": "bid"
+    },
+    "deals": {
+      "collection": "deal"
+    }
+  }
+}
