@@ -1,15 +1,13 @@
-# Strapi application
+# TPL Code Sample
 
-A quick description of your strapi application
-
-###### Be sure you have these versions or the application won't work:
+#### Be sure you have these versions of Node and NPM or the application won't work:
 
 ```
 Node: >=10.16.0 <=14.x.x
 NPM: ^6.0.0
 ```
 
-###### How to run the app
+#### How to run the app
 
 ```
 git clone https://github.com/Vetrano89/tpl-code-sample-BE.git
@@ -22,7 +20,7 @@ Ensure the app is running on http://localhost:1337/ otherwise it won't work with
 
 There should be partied pre-generated.  Check http://localhost:1337/admin/plugins/content-manager/collectionType/application::party.party to ensure these parties exist.
 
-###### No parties showing in the database?
+##### No parties showing in the database?
 
 If the parties don't exist for some reason when you check the Strapi dashboard, you'll need to create them.
 
